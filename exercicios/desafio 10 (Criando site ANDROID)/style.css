@@ -1,0 +1,175 @@
+@charset "utf-8"; /*CSS aceitando símbolos, acentos*/
+
+@font-face { /*fonte baixada*/
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { /*todo o corpo da página sendo configurada conforme abaixo*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: #a4f5a4;
+    margin: auto;
+    padding: 0px;
+}
+
+p { /*Deixando todos os parágrafo da pagina com identação de 30px*/
+    text-indent: 30px;
+}
+
+header { /*editando o cabeçalho da página*/
+    background-image: linear-gradient(#5ee15e, #245424);
+    margin: 0px;
+    padding: 1px;
+    color: white;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.342);
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.menu:hover { /*Animação no menu de navegação*/
+    color: #163416;
+    text-decoration: none;
+    background-color: #5c805cf1;
+    border-radius: 4px;
+}
+
+.linktexto { /*Todas a palavras que contém link externo segue a configuração abaixo*/
+    background-color: #90e090;
+    padding: 1px;
+    color: #141b14;
+    font-weight: bold;
+    
+}
+
+.rodape { /*Editando apenas rodapé*/
+    color: white;
+}
+
+strong { /*Todas as palavras em negrito, mantém a cor de fonte abaixo */
+    color: #334633;
+}
+
+header h1 { /*Editando o H1 apenas do cabeçalho, conforme cod abaixo*/
+    font-weight: bolder;
+    text-align: center;
+}
+
+header h2 { /*Editando apenas o H2 do cabeçalho, conforme cod abaixo*/
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    width: 400px;
+    margin: auto;
+}
+
+nav { /*Editando o menu de navegação, com padding e margin apenas*/
+    margin: 15px;
+    padding: 3px;
+}
+
+a { /*Removendo sublinhado dos link, e deixando cor de fonte em branco, cor de preenchimento verde, aplicado apenas ao menu*/
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    color: #64be64;
+}
+
+main { /*configurando todo o menu com a configuração abaixo, toda a pagina exceto cabeçalho e rodapé*/
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1px;
+    box-shadow: 3px 1px 7px rgba(0, 0, 0, 0.493)
+}
+
+section { /*Para aplicar espaçamento entre do main e body*/
+    padding: 5px;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main h1 { /*Configurando font H1 do corpo da pagina, exceto cabeçalho e rodapé*/
+    font-family: 'Idroid', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    color: #2c3c2c;
+}
+
+main h2 { /*Configurando font H2 do corpo da pagina, exceto cabeçalho e rodapé*/
+    font-family: 'Idroid', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #2c3c2c;
+    background-image: linear-gradient(to right, #368036ac, #b8ffb848);
+}
+
+picture { /*configurando imagens para centralizado*/
+    display: block;
+    text-align: center;
+}
+
+.novomascote1 { /*colocando um espaço na página apenas na imagem antes do vídeo*/
+    margin-bottom: 28px;
+}
+
+.video { /*configurando apresentação do vídeo e responsividade do vídeo na página*/
+    display: block;
+    text-align: center;
+    background-color: #368036;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: -16px;
+}
+
+.extra { /* configurando borda redonda e posição*/
+    border-radius: 0px 0px 13px 13px;
+    margin-top: -18px;
+    background: #B8FFB8;
+    padding: 5px;
+}
+
+.quadro { /*aplicando sombra*/
+    box-shadow: 3px 1px 12px rgba(0, 0, 0, 0.354)
+}
+
+.aprendermais { /*sombra e posiciomaneot*/
+    border-radius: 7px 7px 0px 0px;
+    background-color: #5C805C;
+    padding: 7px;
+    font-weight: 100;
+    font-size: 17px;
+    margin-top: 40px;
+    color: white;
+}
+
+.cup { /*deixando container inline-block para posicionar um do lado do outro*/
+    display: inline-block;
+}
+
+.jelly { /*deixando container inline-block para posicionar um do lado do outro*/
+    display: inline-block;
+}
+
+ul { /*aplicando símbolo de "check" em lista não ordenada*/
+    list-style-type: '✔	';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.entao { /*aplicando margin no texto que se inicia após listas não ordenadas*/
+    margin-top: 1px;
+}
+
+footer { /*rodapé da página*/
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    background: #5C805C;
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004 (aula de favicon)/tag.ico.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        /*  seletores personalizados
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clidren
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 13, 255); /*cor do link*/
+            text-decoration: none; /*tira o sublinado do texto*/
+            font-weight: bold; /*deixar negrito*/
+        }
+
+        a:visited { /* quando o site é visitado*/
+            color: rgb(5, 0, 139);
+        }
+
+        a:hover { /*quando coloca o mouse sobre o link, fica nas configs abaixo*/
+            color: black; 
+            text-decoration: underline;
+        }
+
+        a:active { /*QUANDO CLICA NO LINK MUDA DE COR, PORÉM RETORNA APÓS*/
+            color: rgb(0, 255, 89);
+        }
+
+        a::before {
+            content: ' [clique aqui] ';
+        }
+
+        a::after { /*deixar palavra após o link*/
+            content: ' [link]'; /*nome que vai após o link*/
+            text-decoration: none; /*tirando as configs do texto*/
+            font-weight: normal; /*deixando font normal*/
+            color: darkgray; /*alterando a cor da fonte*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://gustavoguanabara.github.io">Repositório GitHub</a>
+        </li>
+        <li>
+            <a href="https://youtube.com/cursoemvideo/">Canal do Youtube</a>
+        </li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a>
+            
+        </li>
+    </ul>
+</body>
+</html>
